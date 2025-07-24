@@ -11,10 +11,10 @@
 DHT dht(DHTPIN, DHTTYPE);
 HTTPClient http;
 
-const char* ssid = "TP-Link_5E23";
-const char* password = "44379698";
+const char* ssid = "TP-Link_60_502";
+const char* password = "isgm1234";
 const char* serverUrl =
-    "https://thingsboard.cloud/api/v1/integrations/http/08dfa9c0-664f-da36-26e9-ad54e00d7404";
+    "https://thingsboard.cloud/api/v1/integrations/http/503e1217-f54a-be56-42e5-7e56040f91c0";
 
 void setup()
 {
@@ -33,7 +33,7 @@ void setup()
 
 void loop()
 {
-  delay(50000);
+  delay(60000);
 
   float humidity = dht.readHumidity();
   float temperature = dht.readTemperature();
